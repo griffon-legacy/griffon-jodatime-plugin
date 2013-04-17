@@ -1,0 +1,14 @@
+org.joda.time.DateTime = griffon.plugins.jodatime.editors.DateTimePropertyEditor
+org.joda.time.DateTimeZone = griffon.plugins.jodatime.editors.DateTimeZonePropertyEditor
+org.joda.time.Days = griffon.plugins.jodatime.editors.DaysPropertyEditor
+org.joda.time.Duration = griffon.plugins.jodatime.editors.DurationPropertyEditor
+org.joda.time.Hours = griffon.plugins.jodatime.editors.HoursPropertyEditor
+org.joda.time.Instant = griffon.plugins.jodatime.editors.InstantPropertyEditor
+org.joda.time.LocalDate = griffon.plugins.jodatime.editors.LocalDatePropertyEditor
+org.joda.time.LocalDateTime = griffon.plugins.jodatime.editors.LocalDateTimePropertyEditor
+org.joda.time.LocalTime = griffon.plugins.jodatime.editors.LocalTimePropertyEditor
+org.joda.time.Minutes = griffon.plugins.jodatime.editors.MinutesPropertyEditor
+org.joda.time.Months = griffon.plugins.jodatime.editors.MonthsPropertyEditor
+org.joda.time.Seconds = griffon.plugins.jodatime.editors.SecondsPropertyEditor
+org.joda.time.Weeks = griffon.plugins.jodatime.editors.WeeksPropertyEditor
+org.joda.time.Years = griffon.plugins.jodatime.editors.YearsPropertyEditor

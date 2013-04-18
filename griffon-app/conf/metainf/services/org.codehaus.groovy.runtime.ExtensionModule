@@ -1,0 +1,4 @@
+moduleName=griffon-jodatime
+moduleVersion=0.1
+extensionClasses=griffon.plugins.jodatime.JodatimeExtension
+staticExtensionClasses=

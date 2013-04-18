@@ -64,6 +64,7 @@ This plugin contributes the following property editors
 | org.joda.time.Duration      |
 | org.joda.time.Hours         |
 | org.joda.time.Instant       |
+| org.joda.time.Interval      |
 | org.joda.time.LocalDate     |
 | org.joda.time.LocalDateTime |
 | org.joda.time.LocalTime     |
@@ -73,6 +74,30 @@ This plugin contributes the following property editors
 | org.joda.time.Weeks         |
 | org.joda.time.Years         |
 
+### Groovy Module Extension
+
+This plugin registers a Groovy Module Extension that delivers new methods to
+`java.util.Date`, `java.util.Calendar`, `java.lang.Number`, `java.lang.String`
+and `java.util.TimeZone`. These methods are
+
+ * toDateTime()
+ * toDateMidnight()
+ * toInstant()
+ * toLocalDateTime()
+ * toLocalDate()
+ * toLocaleTime()
+ * toDateTimeZone()
+
+The following methods are only defined for `java.lang.Number`
+
+ * toDays()
+ * toDuration()
+ * toHours()
+ * toMinutes()
+ * toMonths()
+ * toSeconds()
+ * toWeeks()
+ * toYears()
 
 [1]: http://joda-time.sourceforge.net
 '''

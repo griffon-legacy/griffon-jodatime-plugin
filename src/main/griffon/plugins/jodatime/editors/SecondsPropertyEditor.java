@@ -40,6 +40,14 @@ public class SecondsPropertyEditor extends AbstractPropertyEditor {
         }
     }
 
+    protected String getAsTextInternal() {
+        return getValue() == null ? "" : String.valueOf(((Seconds) getValue()).getSeconds());
+    }
+
+    public String getFormattedValue() {
+        return getValue() == null ? "" : getValue().toString();
+    }
+
     private void handleAsString(String str) {
         if (isBlank(str)) {
             super.setValueInternal(null);

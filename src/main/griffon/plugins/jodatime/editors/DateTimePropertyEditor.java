@@ -36,14 +36,16 @@ public class DateTimePropertyEditor extends AbstractPropertyEditor {
             super.setValueInternal(null);
         } else if (value instanceof DateTime) {
             super.setValueInternal(value);
+        } else if (value instanceof DateMidnight) {
+            super.setValueInternal(((DateMidnight) value).toDateTime());
+        } else if (value instanceof Instant) {
+            super.setValueInternal(((Instant) value).toDateTime());
         } else if (value instanceof LocalDate) {
             super.setValueInternal(((LocalDate) value).toDateTimeAtStartOfDay());
         } else if (value instanceof LocalDateTime) {
             super.setValueInternal(((LocalDateTime) value).toDateTime());
         } else if (value instanceof LocalTime) {
             super.setValueInternal(((LocalTime) value).toDateTimeToday());
-        } else if (value instanceof DateMidnight) {
-            super.setValueInternal(((DateMidnight) value).toDateTime());
         } else if (value instanceof CharSequence) {
             handleAsString(String.valueOf(value));
         } else if (value instanceof Calendar) {

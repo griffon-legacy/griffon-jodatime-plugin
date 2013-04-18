@@ -40,6 +40,14 @@ public class WeeksPropertyEditor extends AbstractPropertyEditor {
         }
     }
 
+    protected String getAsTextInternal() {
+        return getValue() == null ? "" : String.valueOf(((Weeks) getValue()).getWeeks());
+    }
+
+    public String getFormattedValue() {
+        return getValue() == null ? "" : getValue().toString();
+    }
+
     private void handleAsString(String str) {
         if (isBlank(str)) {
             super.setValueInternal(null);

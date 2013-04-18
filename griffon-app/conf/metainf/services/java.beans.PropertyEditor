@@ -4,6 +4,7 @@ org.joda.time.Days = griffon.plugins.jodatime.editors.DaysPropertyEditor
 org.joda.time.Duration = griffon.plugins.jodatime.editors.DurationPropertyEditor
 org.joda.time.Hours = griffon.plugins.jodatime.editors.HoursPropertyEditor
 org.joda.time.Instant = griffon.plugins.jodatime.editors.InstantPropertyEditor
+org.joda.time.Interval = griffon.plugins.jodatime.editors.IntervalPropertyEditor
 org.joda.time.LocalDate = griffon.plugins.jodatime.editors.LocalDatePropertyEditor
 org.joda.time.LocalDateTime = griffon.plugins.jodatime.editors.LocalDateTimePropertyEditor
 org.joda.time.LocalTime = griffon.plugins.jodatime.editors.LocalTimePropertyEditor
